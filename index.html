@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/airthemeticOpr.js"></script>
+    </head>
+    <body>
+        <center><h2>Calculator</h2></center>
+
+        <div id = "calcArea">
+            <div id = "inputArea">
+                <center><input type="text" id="txt1" class="txt" placeholder="Enter numbers" value = "0" onfocus="this.value=''"></center>
+            </div>
+
+            <div id = "outputArea">
+                <label id="lbl"><center>Output will be shown here</center></label>
+            </div><br/>
+
+            <div id="numberArea">
+                <button id ="btn1" class="button" onclick="num('1')">1</button><button id ="btn2" class="button" onclick="num('2')">2</button><button id ="btn3" class="button" onclick="num('3')">3</button><br/>
+                <button id ="btn4" class="button" onclick="num('4')">4</button><button id ="btn5" class="button" onclick="num('5')">5</button><button id ="btn6" class="button" onclick="num('6')">6</button><br/>
+                <button id ="btn7" class="button" onclick="num('7')">7</button><button id ="btn8" class="button" onclick="num('8')">8</button><button id ="btn9" class="button" onclick="num('9')">9</button><br/>
+                <button id ="btnMplus" class="button" onclick="">M+</button><button id ="btnMminus" class="button" onclick="">M-</button><button id ="btnMS" class="button" onclick="">MS</button><br/>
+                <button id ="btn0" onclick="num('0')">0</button>
+            </div>
+
+            <div id="AirthematicOprArea">
+                <button id ="btnplus" class="button" onclick="passOperator('+')">+</button><button id ="btnminus" class="button" onclick="passOperator('-')">-</button><button id ="btninto" class="button" onclick="passOperator('x')">x</button><br/>
+                <button id ="btndivide" class="button" onclick="passOperator('/')">/</button><button id ="btnpoint" class="button" onclick="putPoint()">.</button><button id ="btnDelete" class="button" onclick="clr(0)">C</button><br/>
+                <button id ="btnUrinary" class="button" onclick="">(+ -)</button><button id ="btnSqroot" class="button" onclick="">Sq Root</button><button id ="btnPercent" class="button" onclick="">%</button><br/>
+                <button id ="btnMC" class="button" onclick="">MC</button><button id ="btnMR" class="button" onclick="">MR</button><button id ="btnBackArrow" class="button" onclick=""><__</button><br/>
+                <button id ="btnInverse" class="button" onclick="">1/x</button><button id ="btnEnter" onclick="eql()"> = </button>
+            </div>
+
+            <div id="ScientificOprArea">
+                <button id ="btnInv" class="button" onclick="">Inv</button><button id ="btnIn" class="button" onclick="">In</button><button id ="btnLeftBracket" class="button" onclick="">(</button><button id ="btnRightBracket" class="button" onclick="">)</button><button id ="btnFE" class="button" onclick="">F-E</button><br/>
+                <button id ="btnInt" class="button" onclick="">Int</button><button id ="btnSinh" class="button" onclick="">sinh</button><button id ="btnSin" class="button" onclick="">sin</button><button id ="btnFactorial" class="button" onclick="">n!</button><button id ="btnExp" class="button" onclick="">Exp</button><br/>
+                <button id ="btnDms" class="button" onclick="">dms</button><button id ="btnCosh" class="button" onclick="">cosh</button><button id ="btncos" class="button" onclick="">cos</button><button id ="btnYrootX" class="button" onclick="">y RootX</button><button id ="btnMod" class="button" onclick="">Mod</button><br/>
+                <button id ="btnPi" class="button" onclick="">Pi</button><button id ="btnTanh" class="button" onclick="">tanh</button><button id ="btntan" class="button" onclick="">tan</button><button id ="btnCuberootX" class="button" onclick="">3 RootX</button><button id ="btnLog" class="button" onclick="">Log</button><br/>
+                <button id ="btn10X" class="button" onclick="">10<sup>x</sup></button><button id ="btnXSquare" class="button" onclick="">x<sup>2</sup></button><button id ="btnXY" class="button" onclick="">x<sup>y</sup></button><button id ="btnXcube"  onclick="">x<sup>3</sup></button><br/>
+            </div>
+
+            <div id="ScientificRadio">
+                <label class="container">Degrees
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">Radians
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">Grads
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                  </label>
+            </div>
+
+            <div id="StatisticsArea">
+                <button id ="btnBarX" class="button" onclick="">X bar</button><button id ="btnBarXSq" class="button" onclick="">X Sq bar</button><button id ="btnSumX" class="button" onclick="">Sum(x)</button><br/>
+                <button id ="btnSumXSq" class="button" onclick="">Sum(x sq)</button><button id ="btnSigmaN" class="button" onclick="">Sigma(n)</button><button id ="btnAdd" class="button" onclick="">Add</button><br/>
+                <button id ="btnCAD" class="button" onclick="">CAD</button><button id ="btnSigmaN-1" class="button" onclick="">Sigma(n-1)</button><br/>
+            </div>
+
+        </div>
+
+    </body>
+</html>
